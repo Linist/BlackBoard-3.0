@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+#card {
+	height: 50%;
+	width: 40%;
+	float: left;
+	margin-left: 5%;
+	background-color: #FFFFFF;
+	text-align: center;
+    margin-bottom: 4%;
+    align-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border-style: solid, ;
+    border:2px solid #9292;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
