@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $('.flex-container').load('Content.html');
+    
     $(".hamburger").click(function () {
         $(".wrapper").toggleClass("collapse");
     });
