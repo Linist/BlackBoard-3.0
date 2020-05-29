@@ -41,10 +41,14 @@ $(document).ready(function () {
         $('.flex-container').load('Library.html');
     });
     
-    $(".seachbtn").click(function(){
-        $(this).toogleClass("bg-green");
-        $(".fas").toogleClass("color-white");
+    $(".searchbtn").click(function(){
+        $(this).toggleClass("bg-blue");
+        $(".fas").toggleClass("color-white");
+        $(".searchInput").toggleClass("active-width");
     });
+    
+    
+    
     
     $(function() {
     $(".switch").click(function() {
