@@ -11,6 +11,12 @@
 body{
   background: #e1ecf2;
 }
+
+.dark-mode{
+  background: #000066;
+  color: black;
+}
+
 .wrapper{
   margin: 10px;
 }

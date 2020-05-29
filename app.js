@@ -45,6 +45,12 @@ $(document).ready(function () {
         $(this).toogleClass("bg-green");
         $(".fas").toogleClass("color-white");
     });
+    
+    $(function() {
+    $(".switch").click(function() {
+        $("body").toggleClass("dark-mode");
+        });
+    });
 });
 
 
