@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>The New Blackboard</title>
+
+    <!---------Default page styling------------------>
     <link rel="stylesheet" href="styles.css">
+    <!---------Main content styling------------------->
     <style type="text/css">
         @import url("Assets/styles/content-styles.css");
     </style>
+
+    <!----------------------Icons---------------------------------->
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!----------------------Jquery------------------------------------>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="app.js"></script>
+
 </head>
 
 <body>
+    <!--------------Header/topMenu---------------------->
     <div class="wrapper">
         <div class="top_navbar">
             <div class="hamburger">
@@ -22,11 +30,11 @@
             </div>
             <div class="top_menu">
 
-                <!--LOGO-->
+                <!------------------LOGO--------------------->
                 <div class="logo"><img src="Assets/images/sdulogo-sort-m.Navn.png" alt="" width="120" height="50" id="SDU" /></div>
 
                 <ul>
-                    <!--SEACHBAR-->
+                    <!-----------------SEACHBAR---------------->
                     <li>
                         <div class="searchWrapper">
                             <div class="searchBox">
@@ -39,19 +47,20 @@
                         </div>
                     </li>
 
-                    <!--FAQ-->
+                    <!------------------FAQ-------------->
                     <li><a href="#">
                             <i class="fas fa-question-circle"></i></a></li>
-                    <!--Dark/White toggle-->
+                    <!-------------Dark/White toggle------------->
                     <li>
                         <div class="switch">
                             <a href="#"><i class="fas fa-adjust"></i></a>
                         </div>
                     </li>
                 </ul>
+
             </div>
         </div>
-
+        <!----------------------------------sidebar--------------------------------->
         <div class="sidebar">
             <ul>
                 <li id="home">
@@ -108,9 +117,10 @@
                     </a></li>
             </ul>
         </div>
-
+        <!-------------------maincontent------------------->
         <div class="main_container">
             <div class="flex-container">
+                <!---------jQuery load main content here------------->
             </div>
         </div>
     </div>

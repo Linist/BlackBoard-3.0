@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
 
+
+/*-----Neutralizing the default-------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,19 +12,44 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/*----------------main-------------------*/
+
 body {
     background: #e1ecf2;
 }
 
-/*----------------------Darkmode----*/
-.dark-mode {
-    background: #000066;
-    color: black;
+.wrapper .main_container {
+    width: (100% - 200px);
+    margin-top: 70px;
+    margin-left: 200px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .main_container .item {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 .wrapper {
     margin: 10px;
 }
+
+/*----------------------Darkmode-------------------*/
+
+.dark-mode {
+    background: #000066;
+    color: black;
+}
+
+.dark-mode .wrapper .top_navbar .top_menu {
+    background: #000099;
+}
+
+/*--------------Header/TopMenu--------------*/
 
 .wrapper .top_navbar {
     width: 100%;
@@ -60,13 +88,40 @@ body {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-/*Logo*/
+.wrapper .top_navbar .top_menu ul {
+    display: flex;
+}
+
+.wrapper .top_navbar .top_menu ul li a {
+    display: block;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #2e4ead;
+    border-radius: 50%;
+    color: #2e4ead;
+}
+
+.wrapper .top_navbar .top_menu ul li a:hover {
+    background: #4360b5;
+    color: #fff;
+}
+
+.wrapper .top_navbar .top_menu ul li a:hover i {
+    color: #fff;
+}
+
+/*----------SDU-Logo------------------*/
+
 .wrapper .top_navbar .top_menu .logo {
     margin-top: 10px;
     margin-left: -10px;
 }
 
-/*---------------------------Searchbox------------------------------------*/
+/*-------------------Searchbox----------------------------*/
+
 .searchbox {
     position: relative;
 }
@@ -123,31 +178,7 @@ body {
     width: 275px;
 }
 
-/*---------------------------Searchbox End------------------------------------*/
-.wrapper .top_navbar .top_menu ul {
-    display: flex;
-}
-
-.wrapper .top_navbar .top_menu ul li a {
-    display: block;
-    margin: 0 10px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    border: 1px solid #2e4ead;
-    border-radius: 50%;
-    color: #2e4ead;
-}
-
-.wrapper .top_navbar .top_menu ul li a:hover {
-    background: #4360b5;
-    color: #fff;
-}
-
-.wrapper .top_navbar .top_menu ul li a:hover i {
-    color: #fff;
-}
+/*--------------------SideBar-----------------------------*/
 
 .wrapper .sidebar {
     position: fixed;
@@ -199,22 +230,6 @@ body {
 .wrapper .sidebar ul li a:hover:before,
 .wrapper .sidebar ul li a.active:before {
     display: block;
-}
-
-.wrapper .main_container {
-    width: (100% - 200px);
-    margin-top: 70px;
-    margin-left: 200px;
-    padding: 15px;
-    transition: all 0.3s ease;
-}
-
-.wrapper .main_container .item {
-    background: #fff;
-    margin-bottom: 10px;
-    padding: 15px;
-    font-size: 14px;
-    line-height: 22px;
 }
 
 .wrapper.collapse .sidebar {

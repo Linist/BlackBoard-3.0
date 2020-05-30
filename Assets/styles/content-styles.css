@@ -16,3 +16,78 @@
     border:2px solid #9292;
     box-shadow: 0 5px 5px rgba(0,0,0,0.1);
 }
+
+.mainContainer {
+    float: center;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(246, 246, 246, 1.00);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainContainerTextTop {
+    float: right;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #929292;
+    padding: 20px;
+    background-color: #2e4ead;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    overflow: visible;
+    text-align: center;
+}
+
+.mainContainerText {
+    float: right;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid #929292;
+    padding: 20px;
+    background-color: rgba(246, 246, 246, 1.00);
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: slategrey;
+}
+
+.flex-container2 {
+    display: flex;
+    float: center;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 30px;
+    padding: 30px;
+    width: 80%;
+    border: 2px solid #929292;
+    background-color: rgba(246, 246, 246, 1.00);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+}
+
+.flex-ContainerContainer {
+    display: flex;
+    align-items: flex-start;
+    border-radius: 30px;
+    border: 2px solid #929292;
+    background-color: rgba(246, 246, 246, 1.00);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.Students {
+    text-align: center;
+
+    Students:nth-child(odd) {
+        background-color: #f2f2f2;
+    }

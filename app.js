@@ -1,10 +1,8 @@
 $(document).ready(function () {
+    /*loading the content on the mainpage*/
     $('.flex-container').load('Content.html');
     
-    $(".hamburger").click(function () {
-        $(".wrapper").toggleClass("collapse");
-    });
-    
+    /*----------------clickEvent side menu-------------*/
     $("#home").click(function () {
         $('.flex-container').load('Content.html');
     });
@@ -40,16 +38,22 @@ $(document).ready(function () {
     $("#library").click(function () {
         $('.flex-container').load('Library.html');
     });
+    /*--------------clickEvent side menu end-----------*/
     
+    /*side menu collapse*/
+    $(".hamburger").click(function () {
+        $(".wrapper").toggleClass("collapse");
+    });
+    
+    /*search animation*/
+    /*virker ikke efter hensigten*/
     $(".searchbtn").click(function(){
         $(this).toggleClass("bg-blue");
         $(".fas").toggleClass("color-white");
         $(".searchInput").toggleClass("active-width");
     });
     
-    
-    
-    
+    /*Dark/white toggle*/
     $(function() {
     $(".switch").click(function() {
         $("body").toggleClass("dark-mode");
