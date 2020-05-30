@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    /*loading the content on the mainpage*/
+    
+    /*------loading the content on the mainpage-----*/
     $('.flex-container').load('Content.html');
     
     /*----------------clickEvent side menu-------------*/
@@ -38,22 +39,38 @@ $(document).ready(function () {
     $("#library").click(function () {
         $('.flex-container').load('Library.html');
     });
-    /*--------------clickEvent side menu end-----------*/
     
-    /*side menu collapse*/
+    /*--------------clickEvent "Courses"-----------*/
+    
+    $("#coursesDesign").click(function () {
+        $('.flex-container').load('CoursesDesign.html');
+    });
+    
+    $("#coursesDP").click(function () {
+        $('.flex-container').load('CoursesDP.html');
+    });
+    
+    $("#courses3D").click(function () {
+        $('.flex-container').load('Courses3D.html');
+    });
+    
+    /*--------------side menu collapse-----------*/
+    
     $(".hamburger").click(function () {
         $(".wrapper").toggleClass("collapse");
     });
     
-    /*search animation*/
-    /*virker ikke efter hensigten*/
+    /*------search animation------*/
+    /*------virker ikke efter hensigten------*/
+    
     $(".searchbtn").click(function(){
         $(this).toggleClass("bg-blue");
         $(".fas").toggleClass("color-white");
         $(".searchInput").toggleClass("active-width");
     });
     
-    /*Dark/white toggle*/
+    /*-----Dark/white toggle-----------*/
+    
     $(function() {
     $(".switch").click(function() {
         $("body").toggleClass("dark-mode");

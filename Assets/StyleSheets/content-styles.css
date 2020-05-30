@@ -35,13 +35,13 @@
     margin-bottom: 10px;
     width: 100%;
     border-radius: 20px;
-    border: 2px solid #929292;
     padding: 20px;
     background-color: #2e4ead;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     overflow: visible;
     text-align: center;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
 }
 
 .mainContainerText {
@@ -51,12 +51,12 @@
     margin-bottom: 0px;
     width: 100%;
     border-radius: 20px;
-    border: 2px solid #929292;
     padding: 20px;
     background-color: rgba(246, 246, 246, 1.00);
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     color: slategrey;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.1);
 }
 
 .flex-container2 {
@@ -91,3 +91,6 @@
     Students:nth-child(odd) {
         background-color: #f2f2f2;
     }
+}
+    
+
