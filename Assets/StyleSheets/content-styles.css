@@ -6,9 +6,10 @@
 	width: 40%;
 	float: left;
 	margin-left: 5%;
+	margin-right: 5%;
 	background-color: #FFFFFF;
 	text-align: center;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     align-content: center;
     overflow: hidden;
     border-radius: 20px;
@@ -92,5 +93,49 @@
         background-color: #f2f2f2;
     }
 }
-    
+/*-----------profil content----------------*/
+#submitReson {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+.submit  {
+  width: 60%;
+  background-color: #2e4ead;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #2e4ead;
+}
+.name  {
+  width: 60%;
+  background-color: #f2f2f2;
+  color: darkslateblue;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.name:hover {
+  background-color: #799AB9;
+}
+
+
+#profilSubmit {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+    margin 10px;
+}
+/*---------------------------------------*/
