@@ -131,6 +131,7 @@ body {
 }
 
 .searchBox .searchInput {
+    position: absolute;
     width: 0px;
     border: 0;
     height: 35px;

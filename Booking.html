@@ -6,10 +6,61 @@
 </head>
 
 <body>
-    </section>
     <section class="mainContent">
-        <div class="mainContainer" id="booking"> <iframe src="https://mitsdu.sdu.dk/booking/default.aspx?o=bb" height="800" width="1200"></iframe></div>
+        <div class="mainContainer" id="library">
+            <div class="profilSubmit">
+                <form action="/action_page.php">
+
+                    <a title="sdub-odense"><img src="/Assets/images/BookingImage_1180x430.jpg" alt="Profile Picture" width="100%" height="300" </a>
+                        <br>
+                        <br>
+                        <br>
+                        <input class="submit" type="submit" value="BOOK ROOM">
+                        <input class="submit" type="submit" value="MY BOOKINGS">
+                        <br>
+                        <br>
+                        <br>
+                        <label>Date</label>
+                        <br>
+                        <input type="text" class="name" name="date" placeholder="date..">
+                        <br>
+                        <label>From</label>
+                        <br>
+                        <input type="text" class="name" name="from" placeholder="From..">
+                        <br>
+                        <label>To</label>
+                        <br>
+                        <input type="text" class="name" name="to" placeholder="To..">
+                        <br>
+                        <label>Participants</label>
+                        <br>
+                        <input type="text" class="name" name="participants" placeholder="Participants..">
+                        <p>The booking will be shown in the participants timetable.</p>
+                        <br>
+                        <br>
+                        <label>Booking method</label>
+                        <br>
+                        <form action="/action_page.php">
+                            <input type="radio" name="name" value="name">
+                            <label for="name">By room name (find a specific room)</label><br>
+
+                            <input type="radio" name="timeslot" value="timeslot">
+                            <label for="timeslot">By timeslot (find all available rooms in a building)</label><br>
+                        </form>
+                        <br>
+                        <label>Room name</label>
+                        <br>
+                        <input type="text" class="name" name="Room name" color="grey">
+                        <br>
+                        <label>Comment</label>
+                        <br>
+                        <input type="text" class="name" name="Comment" color="grey">
+                        <br>
+                </form>
+            </div>
+        </div>
     </section>
+    </div>
     </div>
 </body>
 
