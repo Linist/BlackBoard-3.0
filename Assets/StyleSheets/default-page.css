@@ -143,6 +143,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     transition: all 0.5s linear;
+    right: 25px;
 }
 
 .searchbtn {
@@ -175,7 +176,7 @@ body {
     background: #fff;
 }
 
-.searchBox .searchInput .active-width {
+.searchBox .searchInput.active-width {
     width: 275px;
 }
 

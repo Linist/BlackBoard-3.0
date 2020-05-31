@@ -66,7 +66,7 @@ $(document).ready(function () {
     $(".searchbtn").click(function(){
         $(this).toggleClass("bg-blue");
         $(".fas").toggleClass("color-white");
-        $(".searchInput").toggleClass(".active-width");
+        $(".searchInput").toggleClass("active-width");
     });
     
     /*-----Dark/white toggle-----------*/
