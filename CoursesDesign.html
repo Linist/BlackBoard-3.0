@@ -1,35 +1,148 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>The New Blackboard</title>
+
+    <!---------Default page styling------------------>
+    <link rel="stylesheet" href="Assets/StyleSheets/default-page.css">
+    <!---------Main content styling------------------->
+    <style type="text/css">
+        @import url("Assets/StyleSheets/content-styles.css");
+    </style>
+
+    <!----------------------Icons---------------------------------->
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!----------------------Jquery------------------------------------>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="app.js">
+    
+    </script>
+
 </head>
 
 <body>
+    <!--------------Header/topMenu---------------------->
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+
+                <!------------------LOGO--------------------->
+                <div class="logo"><img src="Assets/images/sdulogo-sort-m.Navn.png" alt="" width="120" height="50" id="SDU" /></div>
+
+                <ul>
+                    <!-----------------SEACHBAR---------------->
+                    <li>
+                        <div class="searchWrapper">
+                            <div class="searchBox">
+
+                                <input type="text" class="searchInput">
+                                <div class="searchbtn">
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!------------------FAQ-------------->
+                    <li><a href="#">
+                            <i class="fas fa-question-circle"></i></a></li>
+                    <!-------------Dark/White toggle------------->
+                    <li>
+                        <div class="switch">
+                            <a href="#"><i class="fas fa-adjust"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!----------------------------------sidebar--------------------------------->
+        <div class="sidebar">
+            <ul>
+                <li id="home">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Home</span></a></li>
+
+                <li id="profile">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <span class="title">Profile</span>
+                    </a></li>
+
+                <li id="courses">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span class="title">Courses</span>
+                    </a></li>
+
+                <li id="timetable">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+                        <span class="title">Timetable</span>
+                    </a></li>
+
+                <li id="mail">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-envelope-open-text"></i></span>
+                        <span class="title">Mail</span>
+                    </a></li>
+
+                <li id="selfservice">
+                    <a href="#">
+                        <span class="icon"><i class="far fa-hand-pointer"></i></span>
+                        <span class="title">SelfService</span>
+                    </a></li>
+
+                <li id="lessontask">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span>
+                        <span class="title">LessonTask</span>
+                    </a></li>
+
+                <li id="booking">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-laptop-house"></i></span>
+                        <span class="title">Booking</span>
+                    </a></li>
+
+                <li id="library">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-book-reader"></i></span>
+                        <span class="title">Library</span>
+                    </a></li>
+            </ul>
+        </div>
+        <!-------------------maincontent------------------->
 
     <section class="mainContent">
-        <ul class="Courses">
-            <div class="mainContainerTextTop">
-                <h2> Videregående udvikling af 3D applikationer </h2>
+				<ul class="Courses">
+				<div class="mainContainerTextTop">
+				    <h2> Videregående udvikling af 3D applikationer </h2> </div>	
+                <div class="mainContainerText">
+					<h3> <a href="#" class="CoursesText"> Announcements from this class: </a> </h3> 
+                    <h4> Info om online eksamen </h4>
+                    <h4> Time aflyst </h4>
+                    </div>
+				<div class="mainContainerText">
+                	<h3> <a href="#" class="CoursesText"> Course materials: </a> </h3> 
+                    <h4> Pensum </h4>
+                    <h4> Padlet for feedback/questions </h4>
+                    </div>
+				<div class="mainContainerText">
+                    <h3> <a href="#" class="Courses"> Tasks: </a> </h3>
+                    <h4> Final assignment </h4>
+                    <h4> Homeassignment: Calculator </h4>
+                    </div>
+			     </ul>
+            </section>
+                <!---------jQuery load main content here------------->
             </div>
-            <div class="mainContainerText">
-                <h3> <a href="#" class="CoursesText"> Announcements from this class: </a> </h3>
-                <h4> Info om online eksamen </h4>
-                <h4> Time aflyst </h4>
-            </div>
-            <div class="mainContainerText">
-                <h3> <a href="#" class="CoursesText"> Course materials: </a> </h3>
-                <h4> Pensum </h4>
-                <h4> Padlet for feedback/questions </h4>
-            </div>
-            <div class="mainContainerText">
-                <h3> <a href="#" class="Courses"> Tasks: </a> </h3>
-                <h4> Final assignment </h4>
-                <h4> Homeassignment: Calculator </h4>
-            </div>
-        </ul>
-    </section>
 
-</body>
-
-</html>
+</body></html>
