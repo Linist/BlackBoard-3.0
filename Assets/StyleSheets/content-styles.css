@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-
+/*----------------Cards-----------------------*/
 #card {
-	height: 50%;
+	height: 300px;
 	width: 40%;
 	float: left;
 	margin-left: 5%;
@@ -14,10 +14,28 @@
     overflow: hidden;
     border-radius: 20px;
     border-style: solid, ;
-    border:2px solid #9292;
+    border:3px solid #2e4ead;
     box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    overflow: auto;
 }
 
+.cardLabel {
+    float:left;
+    position: absolute;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    background-color: #2e4ead;
+    color: #92a6e2;
+    width: 200px;
+    border-radius: 30px;
+    padding: 5px;
+    margin-left: -360px;
+    margin-top: 40px;
+    font-weight: bold;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    
+}
+/*--------------------------------------------*/
 .mainContainer {
     float: center;
     display: block;
