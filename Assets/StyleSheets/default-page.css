@@ -41,17 +41,21 @@ body {
 /*----------------------Darkmode-------------------*/
 
 .dark-mode {
-    background: #454554;
+    background: #151965;
     color: black;
 }
 
 .dark-mode .wrapper .top_navbar .top_menu {
-    background: #000099;
+    background: #32407b;
 }
 
 .dark-mode .wrapper .sidebar {
-    background:
+    background: #515585;
 }
+.darkmode .wrapper .top_navbar .hamburger {
+    background: #515585;
+}
+    
 
 /*--------------Header/TopMenu--------------*/
 

@@ -42,8 +42,12 @@ $(document).ready(function () {
     
     /*--------------clickEvent "Courses"-----------*/
     
-    $("#coursesDesign").click(function () {
+    $( "courses" ).on( "click", "coursesDesign",function () {
         $('.flex-container').load('CoursesDesign.html');
+    });
+    
+    $("#CoursesDesign").click(function () {
+        $('index.flex-container').load('CoursesDesign.html');
     });
     
     $("#coursesDP").click(function () {
@@ -61,7 +65,6 @@ $(document).ready(function () {
     });
     
     /*------search animation------*/
-    /*------virker ikke efter hensigten------*/
     
     $(".searchbtn").click(function(){
         $(this).toggleClass("bg-blue");
