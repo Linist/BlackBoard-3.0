@@ -151,16 +151,16 @@ body {
     font-size: 14px;
     font-weight: bold;
     transition: all 0.5s linear;
-    right: 25px;
+    right: 9px;
 }
 
 .searchbtn {
     position: absolute;
     top: 0px;
-    right: 20px;
+    right: 55px;
     background: #fff;
-    width: 35px;
-    height: 35px;
+    width: 0px;
+    height: 0px;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s linear;
@@ -168,11 +168,11 @@ body {
 
 .searchbtn .fas {
     position: relative;
-    top: 40%;
+    top: 33%;
     left: 30%;
     transform: translate(-50%, -50%);
     color: #2e4ead;
-    font-size: 22px;
+    font-size: 20px;
     transition: all 0.5s linear;
 }
 
@@ -182,6 +182,7 @@ body {
 
 .searchbtn .fas .color-white {
     background: #fff;
+    
 }
 
 .searchBox .searchInput.active-width {

@@ -40,6 +40,14 @@ $(document).ready(function () {
         $('.flex-container').load('Library.html');
     });
     
+    $("#Print").click(function () {
+        $('.flex-container').load('Print.html');
+    });
+    
+    $("#Software").click(function () {
+        $('.flex-container').load('Software.html');
+    });
+    
     /*--------------clickEvent "Courses"-----------*/
     
     $( "courses" ).on( "click", "coursesDesign",function () {
