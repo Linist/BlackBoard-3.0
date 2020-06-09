@@ -1,8 +1,15 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
 </head>
+<style>
+    p {
+        text-align: center;
+    }
+
+</style>
 
 <body>
     <section class="mainContent">
@@ -11,57 +18,80 @@
             <div>
                 <content>
                     <br>
-                    <h1><p>Kontosystem på SDU</p></h1>
+                    <h1>
+                        <p>Kontosystem på SDU</p>
+                    </h1>
                     <br>
                     <p>Eksamensnummer: 000000</p>
                     <p>Fulde navn: John Doe</p>
                     <p>E-mail: jodoe20@student.sdu.dk</p>
                     <br>
                     <p>Brugernavn til PC'en, selvbetjening, e-mail og e-learn:</p>
-                    <p><u>jodoe20</u></p>
-                    
-                    <br>
+                    <p><b>jodoe20</b></p>
 
-                    <p><strong>Accept af Syddansk Universitetsbiblioteks låneregler</strong></p>
-                    <br>
-                    <p>Ved accept af bibliotekets regelsæt kan studiekortet bruges som lånerkort    <input type="checkbox"> </p>
-                    <p>Lånereglerne kan findes <b>her</b>.</p>
-                    <br>
-                    <p><b>Du har accepteret lånereglerne.</b></p>
-                    <br>
-                    
-                    <p>Jeg tillader hermed at mit billede må vises i SDUs systemer:</p>
-                    <p>Tillad billedvisning <input type="checkbox"> </p>
-                    <p></p>
-                    <br>
-                    <p><strong>Aktiver eller ændre password</strong></p>
-                    <p>Har du mistet din adgangskode, har du her også mulighed for at nulstille adgangskoden, så du igen kan få adgang til SDUs systemer. </p>
-                    <p><u>Udfyld nederstående formular og vi sender en mail med nulstillings link</u></p>
-                    <br> <p></p>
-                    <div class="profilSubmit">
-                        <form action="/action_page.php">
-                            <label for="fname">Full Name</label>
-                            <br>
-                            <input type="text" class="name" name="fullname" placeholder="Your full name..">
-                            <br>
-                            <label for="student email">Student email</label>
-                            <br>
-                            <input type="text" class="name" name="lastname" placeholder="Your student email..">
-                            <br>
-                            <label for="submitReson">Reason for reset</label>
-                            <br>
-                            <select id="submitReson" name="country">
-                                <option value="Ordinary change">Ordinary change</option>
-                                <option value="Forgotten">Forgotten</option>
-                                <option value="System fault">System fault</option>
-                            </select>
-                            <br>
-                            <input class="submit" type="submit" value="Reset my password">
-                            <br>
-                        </form>
-                    </div>
 
                 </content>
-            </div>
     </section>
-</body></html>
+    <section class="mainContent">
+        <content class="mainContainer">
+            <h3>Skift Profil billede</h3>
+                <form action="/action_page.php">
+
+                    <br>
+                    <input type="file" id="myfile" class="name" name="myfile" multiple><br><br>
+                    <input type="submit" class="submit">
+                </form>
+        </content>
+    </section>
+    <section class="mainContent">
+        <content class="mainContainer">
+            <p><strong>Accept af Syddansk Universitetsbiblioteks låneregler</strong></p>
+            <br>
+            <p>Ved accept af bibliotekets regelsæt kan studiekortet bruges som lånerkort <input type="checkbox"> </p>
+            <p>Lånereglerne kan findes <b>her</b>.</p>
+            <br>
+            <p><b>Du har accepteret lånereglerne.</b></p>
+            <br>
+
+            <p>Jeg tillader hermed at mit billede må vises i SDUs systemer:</p>
+            <p>Tillad billedvisning <input type="checkbox"> </p>
+            <p></p>
+            <br>
+
+        </content>
+    </section>
+    <section class="mainContent">
+        <content class="mainContainer">
+            <p><strong>Aktiver eller ændre password</strong></p>
+            <p>Har du mistet din adgangskode, har du her også mulighed for at nulstille adgangskoden, så du igen kan få adgang til SDUs systemer. </p>
+            <p><u>Udfyld nederstående formular og vi sender en mail med nulstillings link</u></p>
+            <br>
+            <p></p>
+            <div class="profilSubmit">
+                <form action="/action_page.php">
+                    <label for="fname">Full Name</label>
+                    <br>
+                    <input type="text" class="name" name="fullname" placeholder="Your full name..">
+                    <br>
+                    <label for="student email">Student email</label>
+                    <br>
+                    <input type="text" class="name" name="lastname" placeholder="Your student email..">
+                    <br>
+                    <label for="submitReson">Reason for reset</label>
+                    <br>
+                    <select id="submitReson" name="country">
+                        <option value="Ordinary change">Ordinary change</option>
+                        <option value="Forgotten">Forgotten</option>
+                        <option value="System fault">System fault</option>
+                    </select>
+                    <br>
+                    <input class="submit" type="submit" value="Reset my password">
+                    <br>
+                </form>
+            </div>
+        </content>
+        </div>
+    </section>
+</body>
+
+</html>

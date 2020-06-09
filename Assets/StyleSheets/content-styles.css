@@ -111,7 +111,7 @@ p{
 }
 /*-----------profil content----------------*/
 #submitReson {
-  width: 60%;
+  width: 40%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -121,7 +121,7 @@ p{
 }
 
 .submit  {
-  width: 60%;
+  width: 40%;
   background-color: #2e4ead;
   color: white;
   padding: 14px 20px;
@@ -134,7 +134,7 @@ p{
   background-color: #2e4ead;
 }
 .name  {
-  width: 60%;
+  width: 40%;
   background-color: #f2f2f2;
   color: darkslateblue;
   padding: 14px 20px;

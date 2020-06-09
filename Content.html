@@ -12,11 +12,13 @@
         $("#dashboard").sortable({
             revert: true
         });
+        
         $(".draggable").draggable({
             connectToSortable: "#dashboard"
             /*helper: "clone",
             revert: "invalid"*/
         });
+
     </script>
 </head>
 
@@ -24,70 +26,70 @@
     <section>
         <ul id="dashboard">
             <li class="draggable" class="ui-state-default">
-                <div>
-                    <div class="card" id="card">
-                        <label class="cardLabel">Courses</label>
-                        <iframe src="Courses.html" width="90%" height="250px">
-                        </iframe>
-                    </div>
+                <div class="card" id="card">
+                    <label class="cardLabel">Courses</label>
+                    <iframe src="Courses.html" width="90%" height="250px">
+                    </iframe>
                 </div>
             </li>
             <li class="draggable" class="ui-state-default">
-                <div>
-                    <div class="card" id="card">
 
-                        <label class="cardLabel">Schedule</label>
+                <div class="card" id="card">
 
-                        <a href="Timetable.html"><img src="Assets/images/class_schedule.jpg" alt="Scedule" width="90%" height="250" /></a>
-                        <p class="full-text"></p>
-                    </div>
+                    <label class="cardLabel">Schedule</label>
+
+                    <a href="Timetable.html"><img src="Assets/images/class_schedule.jpg" alt="Scedule" width="90%" height="250" /></a>
+                    <p class="full-text"></p>
                 </div>
+
             </li>
             <li class="draggable" class="ui-state-default">
-                <div>
-                    <div class='card' id="card">
 
-                        <label class="cardLabel">Mail</label>
+                <div class='card' id="card">
 
-                        <a href="Mail.html"><img src="Assets/images/CardPreviewscroll.png" alt="Mail" width="90%" /></a>
-                        <p class='full-text'></p>
-                    </div>
+                    <label class="cardLabel">Mail</label>
+
+                    <a href="Mail.html"><img src="Assets/images/CardPreviewscroll.png" alt="Mail" width="90%" /></a>
+                    <p class='full-text'></p>
                 </div>
+
             </li>
             <li class="draggable" class="ui-state-default">
-                <div>
-                    <div class='card' id="card">
 
-                        <label class="cardLabel">Assignments</label>
-                        <iframe src="LessonTask.html" width="90%" height="250px">
-                        </iframe>
-                    </div>
+                <div class='card' id="card">
+
+                    <label class="cardLabel">Assignments</label>
+                    <iframe src="LessonTask.html" width="90%" height="250px">
+                    </iframe>
                 </div>
+
             </li>
             <li class="draggable" class="ui-state-default">
-                <div>
-                    <div class='card' id="card">
 
-                        <label class="cardLabel">Announcements</label>
+                <div class='card' id="card">
 
-                        <a href="Index.html"><img src="Assets/images/CardPreviewAnnotation.png" alt="Announcements" width="90%" /></a>
-                        <p class='full-text'></p>
-                    </div>
+                    <label class="cardLabel">Announcements</label>
+
+                    <a href="Index.html"><img src="Assets/images/CardPreviewAnnotation.png" alt="Announcements" width="90%" /></a>
+                    <p class='full-text'></p>
                 </div>
+
             </li>
             <li class="draggable" class="ui-state-default">
-                <div>
-                    <div class='card' id="card">
 
-                        <label class="cardLabel">Booking</label>
+                <div class='card' id="card">
 
-                        <p></p>
-                        <input class="submit" type="submit" value="BOOK ROOM">
+                    <label class="cardLabel">Booking</label>
 
-                        <input class="submit" type="submit" value="MY BOOKINGS">
+                    <p></p>
+                    <input class="submit" type="submit" value="BOOK ROOM">
+
+                    <input class="submit" type="submit" value="MY BOOKINGS">
             </li>
             </div>
-            </div>
+
         </ul>
     </section>
-</body></html>
+</body>
+
+</html>
