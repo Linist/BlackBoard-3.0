@@ -8,79 +8,86 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <script>
-        $(function() {
-            $(".draggable").draggable();
+        $("#dashboard").sortable({
+            revert: true
+        });
+        $(".draggable").draggable({
+            connectToSortable: "#dashboard"
+            /*helper: "clone",
+            revert: "invalid"*/
         });
     </script>
-
 </head>
 
 <body>
-    <section class="draggable">
+    <section>
+        <ul id="dashboard">
+            <li class="draggable" class="ui-state-default">
+                <div>
+                    <div class="card" id="card">
+                        <label class="cardLabel">Courses</label>
+                        <iframe src="Courses.html" width="90%" height="250px">
+                        </iframe>
+                    </div>
+                </div>
+            </li>
+            <li class="draggable" class="ui-state-default">
+                <div>
+                    <div class="card" id="card">
 
-        <div class="draggable" class="ui-widget-content">
-            <div class="card" id="card">
-                <label class="cardLabel">Courses</label>
-                <iframe src="Courses.html" width="90%" height="250px">
-                </iframe>
+                        <label class="cardLabel">Schedule</label>
+
+                        <a href="Timetable.html"><img src="Assets/images/class_schedule.jpg" alt="Scedule" width="90%" height="250" /></a>
+                        <p class="full-text"></p>
+                    </div>
+                </div>
+            </li>
+            <li class="draggable" class="ui-state-default">
+                <div>
+                    <div class='card' id="card">
+
+                        <label class="cardLabel">Mail</label>
+
+                        <a href="Mail.html"><img src="Assets/images/CardPreviewscroll.png" alt="Mail" width="90%" /></a>
+                        <p class='full-text'></p>
+                    </div>
+                </div>
+            </li>
+            <li class="draggable" class="ui-state-default">
+                <div>
+                    <div class='card' id="card">
+
+                        <label class="cardLabel">Assignments</label>
+                        <iframe src="LessonTask.html" width="90%" height="250px">
+                        </iframe>
+                    </div>
+                </div>
+            </li>
+            <li class="draggable" class="ui-state-default">
+                <div>
+                    <div class='card' id="card">
+
+                        <label class="cardLabel">Announcements</label>
+
+                        <a href="Index.html"><img src="Assets/images/CardPreviewAnnotation.png" alt="Announcements" width="90%" /></a>
+                        <p class='full-text'></p>
+                    </div>
+                </div>
+            </li>
+            <li class="draggable" class="ui-state-default">
+                <div>
+                    <div class='card' id="card">
+
+                        <label class="cardLabel">Booking</label>
+
+                        <p></p>
+                        <input class="submit" type="submit" value="BOOK ROOM">
+
+                        <input class="submit" type="submit" value="MY BOOKINGS">
+            </li>
             </div>
-        </div>
-
-        <div class="draggable" class="ui-widget-content">
-            <div class="card" id="card">
-
-                <label class="cardLabel">Schedule</label>
-
-                <a href="Timetable.html"><img src="Assets/images/class_schedule.jpg" alt="Scedule" width="90%" height="250" /></a>
-                <p class="full-text"></p>
             </div>
-        </div>
-
-        <div class="draggable" class="ui-widget-content">
-            <div class='card' id="card">
-
-                <label class="cardLabel">Mail</label>
-
-                <a href="Mail.html"><img src="Assets/images/CardPreviewscroll.png" alt="Mail" width="90%" /></a>
-                <p class='full-text'></p>
-            </div>
-        </div>
-
-        <div class="draggable" class="ui-widget-content">
-            <div class='card' id="card">
-
-                <label class="cardLabel">Assignments</label>
-                <iframe src="LessonTask.html" width="90%" height="250px">
-                </iframe>
-            </div>
-        </div>
-
-        <div class="draggable" class="ui-widget-content">
-            <div class='card' id="card">
-
-                <label class="cardLabel">Announcements</label>
-
-                <a href="Index.html"><img src="Assets/images/CardPreviewAnnotation.png" alt="Announcements" width="90%" /></a>
-                <p class='full-text'></p>
-            </div>
-        </div>
-
-        <div class="draggable" class="ui-widget-content">
-            <div class='card' id="card">
-
-                <label class="cardLabel">Booking</label>
-
-                <p></p>
-                <input class="submit" type="submit" value="BOOK ROOM">
-
-                <input class="submit" type="submit" value="MY BOOKINGS">
-
-            </div>
-        </div>
-
+        </ul>
     </section>
 </body></html>
